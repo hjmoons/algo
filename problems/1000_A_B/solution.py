@@ -17,11 +17,9 @@ def write_output(output_data):
 
 def solve(input_data):
     # 여기에 풀이 로직만 작성
-    output_data = []
-
-    # 풀이 로직 작성
-
-    return output_data
+    a = int(input_data.split()[0])
+    b = int(input_data.split()[1])
+    return a+b
 
 
 if __name__ == "__main__":

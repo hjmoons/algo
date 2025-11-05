@@ -53,6 +53,36 @@ pip install -r requirements.txt
 - `selenium`: 자동 제출 (선택)
 - `webdriver-manager`: 웹드라이버 관리 (선택)
 
+## Claude Code 슬래시 명령어
+
+이 프로젝트는 Claude Code에서 사용할 수 있는 슬래시 명령어를 제공합니다.
+
+### 사용 가능한 명령어
+
+1. **`/boj-setup [문제번호]`**: 백준 문제를 로컬에 세팅
+   ```
+   /boj-setup 1000
+   ```
+
+2. **`/boj-verify [문제번호]`**: 백준 문제 풀이를 검증
+   ```
+   /boj-verify 1000
+   ```
+
+3. **`/boj-random [tier] [tag]`**: 랜덤 백준 문제를 가져오기
+   ```
+   /boj-random gold dp
+   /boj-random silver
+   ```
+
+**중요**: 모든 슬래시 명령어는 **한글로 응답**하도록 설정되어 있습니다.
+
+### 명령어 파일 위치
+
+- `.claude/commands/boj-setup.md`
+- `.claude/commands/boj-verify.md`
+- `.claude/commands/boj-random.md`
+
 ## 사용 방법
 
 ### 1. 문제 세팅
