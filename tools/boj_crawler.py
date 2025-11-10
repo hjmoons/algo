@@ -48,15 +48,15 @@ class BOJCrawler:
 
             # 문제 설명
             description = soup.select_one('#problem_description')
-            description_text = description.get_text('\n', strip=True) if description else ""
+            description_text = description.get_text(' ', strip=True) if description else ""
 
             # 입력 설명
             input_desc = soup.select_one('#problem_input')
-            input_text = input_desc.get_text('\n', strip=True) if input_desc else ""
+            input_text = input_desc.get_text(' ', strip=True) if input_desc else ""
 
             # 출력 설명
             output_desc = soup.select_one('#problem_output')
-            output_text = output_desc.get_text('\n', strip=True) if output_desc else ""
+            output_text = output_desc.get_text(' ', strip=True) if output_desc else ""
 
             # 시간 제한, 메모리 제한
             limit_info = soup.select_one('#problem-info')
